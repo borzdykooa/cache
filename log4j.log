@@ -1,0 +1,71 @@
+2018-08-15 11:35:45,107 INFO  - HHH000412: Hibernate Core {5.3.4.Final}
+2018-08-15 11:35:45,114 INFO  - HHH000206: hibernate.properties not found
+2018-08-15 11:35:45,751 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2018-08-15 11:35:46,227 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-08-15 11:35:46,252 INFO  - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cache_database]
+2018-08-15 11:35:46,254 INFO  - HHH10001001: Connection properties: {user=root, password=****}
+2018-08-15 11:35:46,254 INFO  - HHH10001003: Autocommit mode: false
+2018-08-15 11:35:46,262 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-08-15 11:35:47,079 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-08-15 11:35:48,465 INFO  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5c1bd44c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2018-08-15 11:35:48,766 INFO  - Method findAll is called in TrainerDao
+2018-08-15 11:35:48,766 INFO  - Method ifCacheContains findAll is called in Cache
+2018-08-15 11:35:48,785 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2018-08-15 11:35:49,015 INFO  - List of Trainers: [Trainer(id=1, name=Andrei Reut, language=Java, experience=6), Trainer(id=2, name=Ivan Ivanov, language=C++, experience=4), Trainer(id=3, name=Petr Petrov, language=C#, experience=5), Trainer(id=4, name=Sergei Sergeev, language=Java, experience=10), Trainer(id=5, name=Pavel Pavlov, language=C#, experience=2)]
+2018-08-15 11:35:49,015 INFO  - Method add findAll is called in Cache
+2018-08-15 11:35:49,016 INFO  - Cache: [findAll]
+2018-08-15 11:35:49,016 INFO  - Method findAll is called in TrainerDao
+2018-08-15 11:35:49,016 INFO  - Method ifCacheContains findAll is called in Cache
+2018-08-15 11:35:49,017 INFO  - Method returnFromCache findAll is called in Cache
+2018-08-15 11:35:49,017 INFO  - List of Trainers: [Trainer(id=1, name=Andrei Reut, language=Java, experience=6), Trainer(id=2, name=Ivan Ivanov, language=C++, experience=4), Trainer(id=3, name=Petr Petrov, language=C#, experience=5), Trainer(id=4, name=Sergei Sergeev, language=Java, experience=10), Trainer(id=5, name=Pavel Pavlov, language=C#, experience=2)]
+2018-08-15 11:35:49,017 INFO  - Method findByLanguage (Java) is called in TrainerDao
+2018-08-15 11:35:49,017 INFO  - Method ifCacheContains findByLanguageJava is called in Cache
+2018-08-15 11:35:49,047 INFO  - List of Trainers: [Trainer(id=1, name=Andrei Reut, language=Java, experience=6), Trainer(id=4, name=Sergei Sergeev, language=Java, experience=10)]
+2018-08-15 11:35:49,047 INFO  - Method add findByLanguageJava is called in Cache
+2018-08-15 11:35:49,048 INFO  - Cache: [findAll, findByLanguageJava]
+2018-08-15 11:35:49,048 INFO  - Method findByLanguage (C#) is called in TrainerDao
+2018-08-15 11:35:49,048 INFO  - Method ifCacheContains findByLanguageC# is called in Cache
+2018-08-15 11:35:49,052 INFO  - List of Trainers: [Trainer(id=3, name=Petr Petrov, language=C#, experience=5), Trainer(id=5, name=Pavel Pavlov, language=C#, experience=2)]
+2018-08-15 11:35:49,053 INFO  - Method add findByLanguageC# is called in Cache
+2018-08-15 11:35:49,053 INFO  - Cache: [findAll, findByLanguageJava, findByLanguageC#]
+2018-08-15 11:35:49,053 INFO  - Method findByLanguage (JS) is called in TrainerDao
+2018-08-15 11:35:49,053 INFO  - Method ifCacheContains findByLanguageJS is called in Cache
+2018-08-15 11:35:49,061 INFO  - List of Trainers is empty
+2018-08-15 11:35:49,061 INFO  - Method add findByLanguageJS is called in Cache
+2018-08-15 11:35:49,062 INFO  - Cache: [findAll, findByLanguageJava, findByLanguageC#, findByLanguageJS]
+2018-08-15 11:35:49,062 INFO  - Method findByLanguage (Java) is called in TrainerDao
+2018-08-15 11:35:49,062 INFO  - Method ifCacheContains findByLanguageJava is called in Cache
+2018-08-15 11:35:49,062 INFO  - Method returnFromCache findByLanguageJava is called in Cache
+2018-08-15 11:35:49,063 INFO  - List of Trainers: [Trainer(id=1, name=Andrei Reut, language=Java, experience=6), Trainer(id=4, name=Sergei Sergeev, language=Java, experience=10)]
+2018-08-15 11:35:49,063 INFO  - Method findByLanguage (JS) is called in TrainerDao
+2018-08-15 11:35:49,063 INFO  - Method ifCacheContains findByLanguageJS is called in Cache
+2018-08-15 11:35:49,064 INFO  - Method returnFromCache findByLanguageJS is called in Cache
+2018-08-15 11:35:49,064 INFO  - List of Trainers is empty
+2018-08-15 11:35:49,064 INFO  - Method findByLanguage (Ruby) is called in TrainerDao
+2018-08-15 11:35:49,064 INFO  - Method ifCacheContains findByLanguageRuby is called in Cache
+2018-08-15 11:35:49,068 INFO  - List of Trainers is empty
+2018-08-15 11:35:49,069 INFO  - Method add findByLanguageRuby is called in Cache
+2018-08-15 11:35:49,069 INFO  - Cache: [findAll, findByLanguageJava, findByLanguageC#, findByLanguageJS, findByLanguageRuby]
+2018-08-15 11:35:49,069 INFO  - Method findByLanguage (C++) is called in TrainerDao
+2018-08-15 11:35:49,069 INFO  - Method ifCacheContains findByLanguageC++ is called in Cache
+2018-08-15 11:35:49,073 INFO  - List of Trainers: [Trainer(id=2, name=Ivan Ivanov, language=C++, experience=4)]
+2018-08-15 11:35:49,074 INFO  - Method add findByLanguageC++ is called in Cache
+2018-08-15 11:35:49,074 INFO  - Cache: [findByLanguageJava, findByLanguageC#, findByLanguageJS, findByLanguageRuby, findByLanguageC++]
+2018-08-15 11:35:49,074 INFO  - Method findByLanguage (C++) is called in TrainerDao
+2018-08-15 11:35:49,074 INFO  - Method ifCacheContains findByLanguageC++ is called in Cache
+2018-08-15 11:35:49,075 INFO  - Method returnFromCache findByLanguageC++ is called in Cache
+2018-08-15 11:35:49,075 INFO  - List of Trainers: [Trainer(id=2, name=Ivan Ivanov, language=C++, experience=4)]
+2018-08-15 11:35:49,075 INFO  - Method findAll is called in TrainerDao
+2018-08-15 11:35:49,075 INFO  - Method ifCacheContains findAll is called in Cache
+2018-08-15 11:35:49,085 INFO  - List of Trainers: [Trainer(id=1, name=Andrei Reut, language=Java, experience=6), Trainer(id=2, name=Ivan Ivanov, language=C++, experience=4), Trainer(id=3, name=Petr Petrov, language=C#, experience=5), Trainer(id=4, name=Sergei Sergeev, language=Java, experience=10), Trainer(id=5, name=Pavel Pavlov, language=C#, experience=2)]
+2018-08-15 11:35:49,086 INFO  - Method add findAll is called in Cache
+2018-08-15 11:35:49,086 INFO  - Cache: [findByLanguageC#, findByLanguageJS, findByLanguageRuby, findByLanguageC++, findAll]
+2018-08-15 11:35:49,091 INFO  - Method delete is called in TrainerDao
+2018-08-15 11:35:49,091 INFO  - Cache is empty
+2018-08-15 11:35:49,123 INFO  - Trainer(id=1, name=Andrei Reut, language=Java, experience=6) has been deleted successfully!
+2018-08-15 11:35:49,123 INFO  - Method findAll is called in TrainerDao
+2018-08-15 11:35:49,123 INFO  - Method ifCacheContains findAll is called in Cache
+2018-08-15 11:35:49,130 INFO  - List of Trainers: [Trainer(id=2, name=Ivan Ivanov, language=C++, experience=4), Trainer(id=3, name=Petr Petrov, language=C#, experience=5), Trainer(id=4, name=Sergei Sergeev, language=Java, experience=10), Trainer(id=5, name=Pavel Pavlov, language=C#, experience=2)]
+2018-08-15 11:35:49,130 INFO  - Method add findAll is called in Cache
+2018-08-15 11:35:49,131 INFO  - Cache: [findAll]
+2018-08-15 11:35:49,132 INFO  - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cache_database]
